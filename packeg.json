@@ -1,0 +1,8 @@
+{
+  "name": "S.JBot",
+  "description": "Discord Bot Script",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.15.3"
+  }
+}
