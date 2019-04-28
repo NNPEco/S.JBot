@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const discordclient = new Discord.Client();
+const discordclient = new Discord.Client({disableEveryone: true});
 var prefix = ('-');
 discordclient.on("message", message => {
     const ch = message.channel;
@@ -7,6 +7,7 @@ discordclient.on("message", message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     if (message.content.indexOf(prefix) == -1) return;
+    discordclient.user.setActivity('반갑습니다!!');
     //Commands.allcmd(discordclient,message,ch,aut,command,args,Discord);
     
 });
@@ -29,7 +30,6 @@ member.send("", {
     console.log(`${member}`,"has joined" + `${member.guild.name}`);
 });
 discordclient.on('guildMemberRemove', member => {
-    member.guild.systemChannel.send("Bye...");
     console.log(`${member}`,"has Leaved" + `${member.guild.name}`);
 });
 discordclient.login(process.env.token);
