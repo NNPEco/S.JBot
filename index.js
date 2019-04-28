@@ -19,7 +19,7 @@ discordclient.on('guildMemberAdd', member => {
     .setTimestamp()
     member.sendEmbed(embed)
 member.send("", {
-    file: "https://cdn.discordapp.com/attachments/396573058208497674/570750021062885386/2.jpg"
+    file: "https://cdn.discordapp.com/attachments/571916636139814922/571918164154253312/3.jpg"
 });
     console.log(`${member}`,"has joined" + `${member.guild.name}`);
 });
