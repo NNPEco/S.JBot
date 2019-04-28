@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const Commands = require('./command/maincmd');
 const discordclient = new Discord.Client();
+const disid = "MzA0OTgxNzI5NTgyNTE0MTc5.XMUbGg.pKIqRsUSwyBN_ghbCPil_JEJmT0";
 var prefix = ('-');
 discordclient.on("message", message => {
     const ch = message.channel;
@@ -33,5 +34,5 @@ discordclient.on('guildMemberRemove', member => {
     member.guild.systemChannel.send("Bye...");
     console.log(`${member}`,"has Leaved" + `${member.guild.name}`);
 });
-discordclient.login("Mzc0OTA4NDYxMzQ5MzM5MTM4.XMDUFg.EVjvNuGJL10pl7qldpOx9g0rofo");
+discordclient.login(disid);
 
