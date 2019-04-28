@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Commands = require('./command/maincmd');
 const discordclient = new Discord.Client();
-const disid = "MzA0OTgxNzI5NTgyNTE0MTc5.XMUbGg.pKIqRsUSwyBN_ghbCPil_JEJmT0";
+const disid = "NTE4NzM4Mzg3NDA2OTQ2MzE5.XMUcOQ.qmnIogHG-YI6rPwOIeGtSYj2Z5k";
 var prefix = ('-');
 discordclient.on("message", message => {
     const ch = message.channel;
